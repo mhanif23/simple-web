@@ -1,11 +1,16 @@
 import './App.css';
-import ResponsiveAppBar from './components/NavBar'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
 function App() {
-  return (
-    <>
-      <ResponsiveAppBar></ResponsiveAppBar>
-    </>
-  );
+  return( 
+    <Router>
+      <Routes>
+      <Route path="/" />
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;
+
+
