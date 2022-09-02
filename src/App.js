@@ -1,8 +1,10 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Home  from '../src/pages/home';
-import About  from '../src/pages/about';
-import Robots  from '../src/pages/robots';
+
+import ErrorPage from "./pages/ErrorPage";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Robots from "./pages/Robots";
 
 function App() {
   return( 
@@ -11,6 +13,7 @@ function App() {
         <Route path="/" element= {<Home />}/>
         <Route path="/about" element= {<About />}/>
         <Route path="/robots" element= {<Robots />}/>
+        <Route path="*" element= {<ErrorPage />}/>
       </Routes>
     </Router>
   )
